@@ -5,8 +5,59 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <ul>
+          <li><img class="logo" src="http://placehold.it/150x50" width="150" height="50" alt="Gllasy Shop"></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <ul>
+          <li><a class="search" href="#">Поиск</a></li>
+          <li><a class="login" href="#">Вход</a></li>
+          <li><a class="cart" href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <span class="opening-times">С 10 до 20, ежедневно</span>
+        <span class="phone">8 812 450-25-25</span>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <ul class="product-slider">
+      <li class="product-item product-item-active">
+        <img class="product-image"src="http://placehold.it/700x600" alt="Крем-брюле и пломбир с малиновым джемом" width="700" heigh="600">
+        <b class="product-name">Крем-брюле и пломбир с малиновым джемом</b>
+        <a class="btn btn-large"href="#">Давайте оба!</a>
+      </li>
+      <li class="product-item">
+        <img class="product-image"src="http://placehold.it/700x600" alt="Шоколадный пломбир и лимонный сорбет" width="700" heigh="600">
+        <b class="product-name">Шоколадный пломбир и лимонный сорбет</b>
+        <a class="btn btn-large"href="#">Давайте оба!</a>
+      </li>
+      <li class="product-item">
+        <img class="product-image"src="http://placehold.it/700x600" alt="Пломбир с помадкой и клубничный щербет" width="700" heigh="600">
+        <b class="product-name">Пломбир с помадкой и клубничный щербет</b>
+        <a class="btn btn-large"href="#">Давайте оба!</a>
+      </li>
+    </ul>
+    <div class="index-content">
+      <div class="index-content-item">
+        <b class="index-content-item-title">Малинка даром!</b>
+        <p class="index-content-item-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a class="btn btn-normal" href="#">Хочу варенье!</a>
+      </div>
+      <div class="index-content-item">
+        <b class="index-content-item-title">Шоколадки даром!</b>
+        <p class="index-content-item-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a class="btn btn-medium" href="#">Хочу варенье!</a>
+      </div>
+    </div>
+  </main>
   </body>
 </html>
