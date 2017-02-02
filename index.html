@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
     <div class="container">
       <nav class="main-nav">
-      <a class="logo"><img src="img/logo.png" alt="Gllasy Shop" width="154" height="64" ></a>
+      <a><img class="logo" src="img/logo.png" alt="Gllasy Shop" width="154" height="64" ></a>
         <ul>
           <li><a class="main-nav-item main-nav-item-active" href="#">Каталог</a></li>
           <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
@@ -32,52 +33,52 @@
     <ul class="products-slider">
       <li class="products-item product-item-active">
         <img class="products-image" src="img/ice-cream1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
-        <b class="products-name">Крем-брюле и пломбир с малиновым джемом</b>
+        <h2 class="products-name">Крем-брюле и пломбир с малиновым джемом</h2>
         <a class="btn btn-large" href="#">Давайте оба!</a>
       </li>
       <li class="products-item">
         <img class="products-image" src="img/ice-cream2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
-        <b class="products-name">Шоколадный пломбир и лимонный сорбет</b>
+        <h2 class="products-name">Шоколадный пломбир и лимонный сорбет</h2>
         <a class="btn btn-large" href="#">Давайте оба!</a>
       </li>
       <li class="products-item">
         <img class="products-image" src="img/ice-cream3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
-        <b class="products-name">Пломбир с помадкой и клубничный щербет</b>
+        <h2 class="products-name">Пломбир с помадкой и клубничный щербет</h2>
         <a class="btn btn-large" href="#">Давайте оба!</a>
       </li>
     </ul>
     <div class="index-content">
       <div class="gifts">
         <img class="gifts-image" src="img/raspberry-bg.jpg" alt="Малинка даром!" width="560" height="229">
-        <b class="gifts-title">Малинка даром!</b>
+        <h3 class="gifts-title">Малинка даром!</h3>
         <p class="gifts-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <a class="btn btn-normal" href="#">Хочу варенье!</a>
       </div>
       <div class="gifts-item">
         <img class="gifts-image" src="img/chocolate-bg.jpg" alt="Шоколадки даром!" width="560" height="229">
-        <b class="gifts-title">Шоколадки даром!</b>
+        <h3 class="gifts-title">Шоколадки даром!</h3>
         <p class="gifts-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a class="btn btn-normal" href="#">Хочу варенье!</a>
       </div>
     </div>
     <div class="index-content">
       <div class="popular-item popular-hit">
-        <img class="popular-image" src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+        <img class="popular-image" src="img/popular1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
         <span class="popular-price">310 &#8381;/кг</span>
         <p class="popular-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
       </div>
       <div class="popular-item popular-hit">
-        <img class="popular-image" src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+        <img class="popular-image" src="img/popular2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
         <span class="popular-price">310 &#8381;/кг</span>
         <p class="popular-name">Сливочно-кофейное с кусочками шоколада</p>
       </div>
       <div class="popular-item popular-hit">
-        <img class="popular-image" src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+        <img class="popular-image" src="img/popular3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
         <span class="popular-price">310 &#8381;/кг</span>
         <p class="popular-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
       </div>
       <div class="popular-item popular-hit">
-        <img class="popular-image" src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+        <img class="popular-image" src="img/popular4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
         <span class="popular-price">310 &#8381;/кг</span>
         <p class="popular-name">Сливочное крем-брюле с карамельной подливкой</p>
       </div>
@@ -86,25 +87,21 @@
       <div class="features">
         <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства и на развес</h2>
         <div class="feature-item">
-          <img class="feature-icon" src="im" alt="" width="30" height="30">
           <p class="feature-text">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </p>
         </div>
         <div class="feature-item">
-          <img class="feature-icon" src="http://placehold.it/30x30" alt="" width="30" height="30">
           <p class="feature-text">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
         </div>
         <div class="feature-item">
-          <img class="feature-icon" src="http://placehold.it/30x30" alt="" width="30" height="30">
           <p class="feature-text">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
         </div>
         <div class="feature-item">
-          <img class="feature-icon" src="http://placehold.it/30x30" alt="" width="30" height="30">
           <p class="feature-text">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить превосходный вкус.
           </p>
@@ -115,7 +112,7 @@
       <div class="blog-post">
         <span>Новое в нашем блоге</span>
         <h3 class="blog-post-title">10 способов сервировки фруктовых щербетов к столу</h3>
-        <img class="blog-post-image" src="http://placehold.it/300x100" alt="10 способов сервировки фруктовых щербетов к столу" width="300" height="100">
+        <img class="blog-post-image" src="img/strawberry-bg.jpg" alt="10 способов сервировки фруктовых щербетов к столу" width="560" height="220">
       </div>
       <div class="subscribe-container">
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе вего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Чество =)</p>
@@ -126,7 +123,7 @@
       </div>
     </div>
     <div class="map">
-      <img class="map-image" src="http://placehold.it/350x125" alt="Адрес на карте">
+      <img class="map-image" src="img/map.jpg" alt="Адрес на карте" width="1200" height="430">
       <div class="map-contants">
         <span>Адрес главного офиса и офлайн магазина:</span>
         <b class="map-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -139,19 +136,19 @@
   <footer class="main-footer">
     <div class="container">
       <div class="social">
-        <a href="#" class="btn-twit">Твиттер</a>
+        <a href="#" class="btn-tw">Твиттер</a>
         <a href="#" class="btn-inst">Instagram</a>
         <a href="#" class="btn-fb">Facebook</a>
         <a href="#" class="btn-vk">Вконтакте</a>
       </div>
       <div class="info">
-        <a class="info-bold" href="#">Для поставщиков</a>
+        <a href="#"><b>Для поставщиков<b></a>
         <a href="#">Наши документы</a>
         <a href="#">О производстве</a>
         <a href="#">Экологические стандарты</a>
       </div>
       <div class="copyright">
-        <img class="btn-academy" src="http://placehold.it/100x50" alt="HTML Academy" width="100" height="50">
+        <a href=""><img src="img/htmlacademy-logo.png" alt="HTML Academy" width="108" height="38"></a>
         <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
       </div>
     </div>
