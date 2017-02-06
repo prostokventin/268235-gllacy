@@ -48,7 +48,7 @@ h3 {
 .container {
   margin: 0 auto;
   min-width: 900px;
-  max-width: 1200px;
+  width: 1200px;
   padding: 0 27px;
   /*background: black;*/
   box-sizing: border-box;
@@ -62,7 +62,7 @@ h3 {
 
 .main-nav {
   display: flex;
-  width: 570px;
+  width: 560px;
 }
 
 .user-block {
@@ -111,6 +111,7 @@ h3 {
 .banners {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .banners-item {
@@ -143,4 +144,163 @@ h3 {
   bottom: 0;
   right: 0;
   margin: 20px;
+}
+
+.popular-products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.popular-products-item {
+  width: 267px;
+}
+
+.popular-products-item-wrapper {
+  display: block;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.popular-products-image {
+  border-radius: 50%;
+}
+
+.hit::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url(../img/hit.png);
+  z-index: 1;
+}
+
+.popular-products-price {
+  position: absolute;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  bottom: 0;
+  left: 0;
+}
+
+.popular-products-price::after {
+  content: "/кг";
+  font-size: 30px;
+}
+
+.popular-products-title {
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  background: #eee3cc url(../img/waffle-pattern.jpg) center repeat;
+  color: #323232;
+  padding: 27px 20px;
+  border-radius: 14px;
+  margin-bottom: 40px;
+}
+
+.features-header {
+  width: 100%;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.features-item {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+}
+
+.features-item-desc {
+  margin: 0;
+  padding: 10px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-item {
+  width: 560px;
+  height: 220px;
+}
+
+.blog-item-wrapper {
+  position: relative;
+  padding: 24px 20px;
+  color: #323232;
+  font-weight: 500;
+  width: 290px;
+}
+
+.blog-item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 14px;
+}
+
+.blog-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.subscribe {
+  width: 560px;
+  background: #f8f7f4 url(../img/post-pattern.png) center repeat;
+  border-radius: 14px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.subscribe-wrapper {
+  background: #f8f7f4;
+  height: 208px;
+  border-radius: 13px;
+  padding: 34px 15px;
+  color: #5a5a5a;
+  box-sizing: border-box;
+}
+
+.subscribe-text {
+  margin-bottom: 40px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-email-field {
+  width: 368px;
+  padding: 13px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  color: #999;
+  border-radius: 5px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.subscribe-btn {
+  border: none;
 }
