@@ -3,62 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="main-header">
-    <div class="container">
-      <nav class="main-nav">
-      <a><img class="logo" src="img/logo.png" alt="Gllasy Shop" width="154" height="64" ></a>
-        <ul>
-          <li><a class="main-nav-item main-nav-item-active" href="#">Каталог</a></li>
-          <li><a class="main-nav-item" href="#">Доставка и оплата</a></li>
-          <li><a class="main-nav-item" href="#">О Компании</a></li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <ul>
-          <li><a class="search" href="#">Поиск</a></li>
-          <li><a class="login" href="#">Вход</a></li>
-          <li><a class="cart" href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <div class="header-contacts">
-        <span>С 10 до 20, ежедневно</span>
-        <span><b>8 812 450-25-25</b></span>
+  <header class="main-header container">
+    <nav class="main-nav">
+      <a class="logo"><img src="img/logo.png" alt="Gllasy Shop" width="154" height="64" ></a>
+      <ul class="nav-list">
+        <li class="nav-list-item nav-list-item-active"><a href="#">Каталог</a></li>
+        <li class="nav-list-item"><a href="#">Доставка и оплата</a></li>
+        <li class="nav-list-item"><a href="#">О Компании</a></li>
+      </ul>
+    </nav>
+    <div class="user-block">
+      <div class="search"><a href="#">Поиск</a></div>
+      <div class="login"><a href="#">Вход</a></div>
+      <div class="cart"><a href="#">Корзина</a></div>
+      <div class="contacts">
+        <div class="contacts-hours">С 10 до 20, ежедневно</div>
+        <div class="contacts-phone">8 812 450-25-25</div>
       </div>
     </div>
   </header>
   <main class="container">
-    <ul class="products-slider">
-      <li class="products-item product-item-active">
-        <img class="products-image" src="img/ice-cream1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
-        <h2 class="products-name">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a class="btn btn-large" href="#">Давайте оба!</a>
+    <ul class="main-products">
+      <li class="main-products-item main-products-item-active">
+        <img class="main-products-item-image" src="img/ice-cream1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
+        <div class="main-products-item-name">
+          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+          <a class="btn btn-large" href="#">Давайте оба!</a>
+        </div>
       </li>
-      <li class="products-item">
-        <img class="products-image" src="img/ice-cream2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
-        <h2 class="products-name">Шоколадный пломбир и лимонный сорбет</h2>
-        <a class="btn btn-large" href="#">Давайте оба!</a>
+      <li class="main-products-item">
+        <img class="main-products-item-image" src="img/ice-cream2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
+        <div class="main-products-item-name">
+          <h2>Шоколадный пломбир и лимонный сорбет</h2>
+          <a class="btn btn-large" href="#">Давайте оба!</a>
+        </div>
       </li>
-      <li class="products-item">
-        <img class="products-image" src="img/ice-cream3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
-        <h2 class="products-name">Пломбир с помадкой и клубничный щербет</h2>
-        <a class="btn btn-large" href="#">Давайте оба!</a>
+      <li class="main-products-item">
+        <img class="main-products-item-image" src="img/ice-cream3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
+        <div class="main-products-item-name">
+          <h2>Пломбир с помадкой и клубничный щербет</h2>
+          <a class="btn btn-large" href="#">Давайте оба!</a>
+        </div>
       </li>
     </ul>
-    <div class="index-content">
-      <div class="gifts">
-        <img class="gifts-image" src="img/raspberry-bg.jpg" alt="Малинка даром!" width="560" height="229">
-        <h3 class="gifts-title">Малинка даром!</h3>
-        <p class="gifts-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="btn btn-normal" href="#">Хочу варенье!</a>
+    <div class="banners">
+      <div class="banners-item">
+        <img class="banners-item-image" src="img/raspberry-bg.jpg" alt="Малинка даром!" width="560" height="229">
+        <div class="banners-item-text-wrapper">
+          <h3 class="banners-item-title">Малинка даром!</h3>
+          <p class="banners-item-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        </div>
+        <a class="banners-item-btn btn" href="#">Хочу варенье!</a>
       </div>
-      <div class="gifts-item">
-        <img class="gifts-image" src="img/chocolate-bg.jpg" alt="Шоколадки даром!" width="560" height="229">
-        <h3 class="gifts-title">Шоколадки даром!</h3>
-        <p class="gifts-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a class="btn btn-normal" href="#">Хочу варенье!</a>
+      <div class="banners-item">
+        <img class="banners-item-image" src="img/chocolate-bg.jpg" alt="Шоколадки даром!" width="560" height="229">
+        <div class="banners-item-text-wrapper">
+          <h3 class="banners-item-title">Шоколадки даром!</h3>
+          <p class="banners-item-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        </div>
+        <a class="banners-item-btn btn" href="#">Хочу варенье!</a>
       </div>
     </div>
     <div class="index-content">
