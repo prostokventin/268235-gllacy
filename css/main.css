@@ -75,6 +75,10 @@ h3 {
   margin-top: -120px;
 }
 
+.slider-control-btn {
+  display: none;
+}
+
 .slide-hide {
   display: none;
 }

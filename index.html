@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Глейси. Главная.</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -29,6 +29,9 @@
   </header>
   <main>
     <div class="container slider">
+      <input class="slider-control-btn" type="radio" id="slider-control-btn-1" name="toggle" checked>
+      <input class="slider-control-btn" type="radio" id="slider-control-btn-2" name="toggle">
+      <input class="slider-control-btn" type="radio" id="slider-control-btn-3" name="toggle">
       <div class="slide">
         <img class="slide-image" src="img/ice-cream1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
         <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
@@ -45,12 +48,12 @@
         <a class="slide-btn btn" href="">Давайте оба!</a>
       </div>
       <div class="slider-controls">
-        <label for="slider-controls-btn"></label>
-        <label for="slider-controls-btn"></label>
-        <label for="slider-controls-btn"></label>
+        <label for="slider-control-btn-1"></label>
+        <label for="slider-control-btn-2"></label>
+        <label for="slider-control-btn-3"></label>
       </div>
     </div>
-    <section class="container banners">
+    <div class="container banners">
       <div class="banners-item">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -61,8 +64,8 @@
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a class="btn" href="#">Хочу шоколадки!</a>
       </div>
-    </section>
-    <section class="container hits">
+    </div>
+    <div class="container hits">
       <div class="product hit">
         <img class="product-image" src="img/hit1.jpg" alt="" width="267" height="267">
         <h3 class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -86,37 +89,37 @@
         <div class="product-price">415 &#8381; /кг</div>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
       </div>
-    </section>
-    <section class="container features">
+    </div>
+    <div class="container features">
       <header class="features-header">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</header>
       <div class="features-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</div>
       <div class="features-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</div>
       <div class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </div>
       <div class="features-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</div>
-    </section>
+    </div>
     <div class="container blog">
-      <section class="blog-post">
+      <div class="blog-post">
         <span>Новое в нашем блоге</span>
         <header class="blog-post-header">10  способов сервировки фруктовых щербетов к столу</header>
        <!--  <img class="blog-post-image" src="img/strawberry-bg.jpg" alt="10 способов сервировки фруктовых щербетов к столу" width="560" height="220"> -->
-      </section>
+      </div>
       <form class="subscribe" action="subscribe.php" method="post">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <input class="subscribe-email-field" type="email" placeholder="Электронная почта" required>
         <button class="subscribe-btn btn" type="submit">Отправить</button>
       </form>
     </div>
-    <section class="container map">
+    <div class="container map">
       <img class="map-image" src="img/map.jpg" alt="Адрес на карте" width="1200" height="430">
       <div class="map-contacts">
         <span>Адрес главного офиса и офлайн магазина:</span>
-        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург<b>
+        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         <span>Для заказов по телефону:</span>
-        <b>8 812 450-25-25<b>
+        <b>8 812 450-25-25</b>
         <span>(с 10 до 20 ежедневно)</span>
         <a class="feedback-btn btn" href="#">Форма обратной связи</a>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="container main-footer">
     <ul class="socials">
