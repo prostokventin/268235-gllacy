@@ -3,13 +3,14 @@ body {
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
-  color: #5a5a5a;
+  color: #323232;
   background: #849d8f;
 }
 
+
 h2 {
   font-size: 35px;
-  line-height: 39px;
+  line-height: 41px;
   font-weight: bold;
   color: #fff;
   margin: 0;
@@ -36,7 +37,7 @@ button {
 
 a:focus,
 button:focus {
-  box-shadow: 0 0 0 2px #8fbdec;
+  box-shadow: inset 0 0 0 2px #8fbdec;
 }
 
 input[type="text"],
@@ -50,6 +51,50 @@ textarea {
   padding: 8px 13px;
   color: #323232; 
   box-sizing: border-box;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999999;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder {
+  color: #999999;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 input[type="text"]:hover,
@@ -77,7 +122,7 @@ textarea:focus {
 
 .underline-black {
   color: #323232;
-  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .underline-black:hover {
@@ -144,6 +189,7 @@ textarea:focus {
   min-height: 120px;
   margin-bottom: 0;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 .main-nav {
@@ -213,7 +259,6 @@ textarea:focus {
   border-radius: 17px;
 }
 
-
 .nav-list-item:not(.active) > a > span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -256,14 +301,12 @@ textarea:focus {
   left: -8px;
   overflow: hidden;
 }
-.inner-list-item {
-  padding: 0 10px
-}
+
 
 .inner-list-item > a {
   display: block;
-  color: #333333;
-  padding: 8px 10px;
+  color: #323232;
+  padding: 9px 16px;
   text-decoration: none;
   font-size: 14px;
   line-height: 15px;
@@ -274,11 +317,15 @@ textarea:focus {
 }
 
 .inner-list .active a {
-  color: #323232;
+  color: #ffffff;
 }
 
 .inner-list-item:hover {
   background: #fbded7;
+}
+
+.inner-list-item:hover a {
+  color: #323232;
 }
 
 .inner-list-item:active a {
@@ -289,22 +336,38 @@ textarea:focus {
   background: #f6b5a5;
 }
 
-
-.inner-list-item:first-child > a{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bold;
-  box-shadow: 0 2px 0 -1px rgba(0, 0, 0, 0.2);
+.inner-list-item:first-child {
+  position: relative;
   margin-bottom: 1px;
 }
 
-.inner-list-item:nth-child(2) > a {
-  padding-top: 12px;
+.inner-list-item:first-child > a {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .inner-list-item:last-child > a {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+
+
+.inner-list-item .bottom-line {
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 85%;
+}
+
 
 .breadcrumbs {
   display: -webkit-box;
@@ -329,7 +392,6 @@ textarea:focus {
   line-height: 16px;
   color: #fff;
 }
-
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "»";
@@ -371,12 +433,18 @@ textarea:focus {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  line-height: 23px;
-  font-weight: 500px;
+  line-height: 16px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   position: relative;
   margin-left: 10px;
+}
+
+.user-block .login > a,
+.user-block .cart > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 44px;
 }
 
 .user-block .search a {
@@ -425,13 +493,8 @@ textarea:focus {
 }
 
 .user-block .login > a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 44px;
-  padding-right: 15px;
   width: 92px;
   box-sizing: border-box;
-  font-weight: 500;
 }
 
 .user-block .login {
@@ -495,8 +558,9 @@ textarea:focus {
 
 .user-block .login .wrapper a {
   display: block;
+  text-decoration: none;
   font-size: 13px;
-  line-height: 21px;
+  line-height: 24px;
   color: #323232;
   margin-left: 16px;
 }
@@ -507,10 +571,6 @@ textarea:focus {
 }
 
 .user-block .cart > a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 44px;
-  /*padding-right: 34px;*/
   width: 117px;
   box-sizing: border-box;
   font-weight: 500;
@@ -697,6 +757,7 @@ textarea:focus {
   text-align: center;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 527px;
 }
 
 .slider-control-btn {
@@ -736,7 +797,7 @@ textarea:focus {
   font-weight: bold;
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .slide-btn {
@@ -749,8 +810,9 @@ textarea:focus {
   position: absolute;
   bottom: 62px;
   left: 28px;
-  z-index: 1;
+  z-index: 10;
   font-size: 0;
+  zoom:1;
 }
 
 .slider-controls label {
@@ -799,7 +861,7 @@ textarea:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 527px;
+  margin-bottom: 33px;
 }
 
 .banners-item {
@@ -815,7 +877,11 @@ textarea:focus {
   padding: 15px 20px 24px 19px;
   box-sizing: border-box;
   z-index: 4;
-  border-radius: 12px;
+  border-radius: 14px;
+}
+
+.banners-item h2 {
+  margin-bottom: 16px;
 }
 
 .banners-item p {
@@ -823,6 +889,8 @@ textarea:focus {
   line-height: 22px;
   color: #ffffff;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
   margin-bottom: 45px;
 }
 
@@ -832,11 +900,11 @@ textarea:focus {
 }
 
 .banners-item-raspberry {
-  background: #820d21 url("../img/raspberry-bg.jpg") repeat-y center top;
+  background: #820d21 url("../img/raspberry-bg.jpg") repeat-y -27px -94px;
 }
 
 .banners-item-chocolate {
-  background: #820d21 url("../img/chocolate-bg.jpg") repeat-y center top;
+  background: #820d21 url("../img/chocolate-bg.jpg") repeat-y -217px -104px;
 }
 
 .hits {
@@ -848,7 +916,7 @@ textarea:focus {
           justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: -2px;
+  margin-bottom: 6px;
   padding: 0 14px;
   box-sizing: border-box;
 }
@@ -909,18 +977,26 @@ textarea:focus {
   color: #ffffff;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   position: absolute;
-  bottom: 22px;
-  left: 0;
+  bottom: 21px;
+  left: -1px;
 }
 
 .product-price:after {
-  content: "/ кг";
+  content: "/кг";
   font-size: 30px;
   line-height: 45px;
   font-weight: bold;
   color: #ffffff;
 }
 
+.ruble {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 45px;
+  background: url("../img/ruble.svg") no-repeat 4px 2px;
+  background-size: 31px 36px;
+}
 
 .product-name .underline:hover {
   color: #ffffff;
@@ -957,9 +1033,8 @@ textarea:focus {
 .features-header {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
   margin-bottom: 23px;
-  letter-spacing: 0.2px;
+  font-weight: 500;
 }
 
 .features-item {
@@ -1017,7 +1092,6 @@ textarea:focus {
   padding: 25px 20px;
   box-sizing: border-box;
   background: #ffffff url("../img/strawberry-bg.jpg") center no-repeat;
-  color: #323232;
   border-radius: 15px;
 }
 
@@ -1038,13 +1112,12 @@ textarea:focus {
 }
 
 .blog-post-header a {
-  color: #000;
+  color: #323232;
 }
 
 .blog-post-header a:hover {
   color: #e84d37;
 }
-
 
 .subscribe {
   width: 560px;
@@ -1059,12 +1132,12 @@ textarea:focus {
   height: 208px;
   border-radius: 13px;
   padding: 34px 15px;
-  color: #5a5a5a;
   box-sizing: border-box;
 }
 
 .subscribe-text {
   margin-bottom: 40px;
+  color: #5a5a5a;
 }
 
 .subscribe-form {
@@ -1150,7 +1223,6 @@ textarea:focus {
 .map-contacts-address {
   margin-bottom: 18px;
 }
-
 
 .feedback-btn {
   display: block;
@@ -1250,11 +1322,14 @@ textarea:focus {
 .info-item {
   font-size: 13px;
   line-height: 18px;
-  font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   position: relative;
   margin-bottom: 10px;
+}
+
+.info-item-liked {
+  font-weight: bold;
 }
 
 .info-item-liked::before {
@@ -1329,6 +1404,10 @@ textarea:focus {
   padding: 7px 10px;
   height: 36px;
   box-sizing: border-box;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
 }
 
 .filters-list-item-sort fieldset:hover {
@@ -1343,7 +1422,6 @@ textarea:focus {
   position: absolute;
   top: -25px;
   left: 15px;
-  color: #fff;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1354,7 +1432,9 @@ textarea:focus {
 }
 
 .filters-list-item-sort select {
+  display: block;
   width: 100%;
+  height: 100%;
   border-color: transparent;
   background: transparent;
   color: #fff;
@@ -1390,6 +1470,12 @@ textarea:focus {
   height: 21px;
   position: absolute;
   top: 7px;
+  cursor: pointer;
+}
+
+.filters-list-item-price .control-from:hover,
+.filters-list-item-price .control-to:hover {
+  transform: scale(1.1);
 }
 
 .filters-list-item-price .control-from {
@@ -1412,9 +1498,6 @@ textarea:focus {
   position: relative;
   padding-left: 8px;
   margin-left: 35px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #fff;
 }
 
 .filters-list input[type="radio"] + label::before {
@@ -1444,9 +1527,6 @@ textarea:focus {
   position: relative;
   padding-left: 10px;
   margin-left: 38px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #fff;
 }
 
 .filters-list input[type="checkbox"] + label::before {
@@ -1468,11 +1548,10 @@ textarea:focus {
   border-radius: 18px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
   padding: 8px 30px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #fff;
 }
 
 .filters-btn:hover {
@@ -1520,7 +1599,9 @@ textarea:focus {
   border-radius: 50%;
   text-align: center;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 18px;
+  padding: 3px 0;
+  box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
