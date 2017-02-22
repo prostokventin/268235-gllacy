@@ -43,8 +43,8 @@
         <div class="login">
           <a href="#">Вход</a>
           <form action="/login">
-            <input type="email" name="email" placeholder="Электронная почта" required>
-            <input type="password" name="password" placeholder="Пароль" required>
+            <input class="login-email" type="email" name="email" placeholder="Электронная почта" required>
+            <input class="login-password" type="password" name="password" placeholder="Пароль" required>
             <button class="btn" type="submit">Войти</button>
             <div class="wrapper">
               <a href="#"><span class="underline-black">Забыли пароль?</span></a>
@@ -153,10 +153,11 @@
       </div>
       <div class="subscribe">
         <div class="subscribe-wrapper">
-          <div class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе вего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</div>
+          <div class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе вcего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</div>
           <form class="subscribe-form" action="subscribe.php" method="post">
+            <!-- <span class="placeholder">Электронная почта</span> -->
             <input class="subscribe-email-field" type="email" placeholder="Электронная почта" required>
-            <button class="subscribe-btn btn" type="submit">Отправить</button>
+            <button class="btn subscribe-btn" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -169,7 +170,7 @@
         <div class="map-contacts-phone-title">Для заказов по телефону:</div>
         <div class="map-contacts-phone">8 812 450-25-25</div>
         <div class="map-contacts-time">(с 10 до 20 ежедневно)</div>
-        <a class="feedback-btn btn" href="#">Форма обратной связи</a>
+        <a class="btn feedback-btn" href="#">Форма обратной связи</a>
       </div>
     </div>
   </main>
@@ -184,7 +185,7 @@
       <div class="info">
         <div class="info-left">
           <a class="info-item info-item-liked" href="#"><span class="underline">Для поставщиков</span></a>
-          <a class="info-item" href="#"><span class="underline">О производств</span></a>
+          <a class="info-item" href="#"><span class="underline">О производстве</span></a>
         </div>
         <div class="info-right">
           <a class="info-item" href="#"><span class="underline">Наши документы</span></a>
@@ -198,17 +199,19 @@
     </div>
   </footer>
   </div>
+  <div class="overlay"></div>
   <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <form action="/feedback" class="feedback-form" method="post">
       <div class="feedback-form-title">Мы обязательно вам ответим</div>
       <div class="wrapper">
-        <input type="text" name="name" placeholder="Как вас зовут?" required>
-        <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+        <input class="login-field" type="text" name="login" placeholder="Как вас зовут?" required>
+        <input class="email-field" type="email" name="email" placeholder="Ваша почта для ответа?" required>
       </div>
-      <textarea name="feedback-form-comment" id="comment" cols="48" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea name="feedback-form-comment" id="comment" placeholder="Напишите что-нибудь..."></textarea>
       <button class="btn feedback-form-btn" type="button">Отправить</button>
     </form>
   </div>
+  <script src="js/popup.js"></script>
 </body>
 </html>

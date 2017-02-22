@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="catalog-bg">
   <header class="container main-header">
     <nav class="main-nav">
       <div class="main-nav-top">
@@ -60,22 +60,22 @@
           <div class="cart-content">
             <ul class="cart-products-list">
               <li class="cart-products-item">
-                <button class="cart-product-del-btn">Удалить</button>
+                <button type="button" class="cart-products-del-btn">Удалить</button>
                 <a class="cart-product" href="#">
-                  <img class="cart-product-img" src="img/cart-ice-cream1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                  <span class="cart-product-name">Пломбир с апельсиновым джемом</span>
-                  <span class="cart-product-calc-price">1,5 кг х <span class="kg-price">200 руб.</span></span>
-                  <span class="cart-product-end-price">300 руб.</span>
+                  <img class="cart-products-img" src="img/cart-ice-cream1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                  <span class="cart-products-name">Пломбир с апельсиновым джемом</span>
                 </a>
+                  <span class="cart-products-calc-price">1,5 кг х <span class="kg-price">200 руб.</span></span>
+                  <span class="cart-products-end-price">300 руб.</span>
               </li>
               <li class="cart-products-item">
-                <button class="cart-product-del-btn">Удалить</button>
+                <button type="button" class="cart-products-del-btn">Удалить</button>
                 <a class="cart-product" href="#">
-                  <img class="cart-product-img" src="img/cart-ice-cream2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                  <span class="cart-product-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-                  <span class="cart-product-calc-price">1,5 кг х <span class="kg-price">200 руб.</span></span>
-                  <span class="cart-product-end-price">300 руб.</span>
+                  <img class="cart-products-img" src="img/cart-ice-cream2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                  <span class="cart-products-name">Клубничный пломбир с присыпкой из белого шоколада</span>
                 </a>
+                  <span class="cart-products-calc-price">1,5 кг х <span class="kg-price">200 руб.</span></span>
+                  <span class="cart-products-end-price">300 руб.</span>
               </li>
             </ul>
             <div class="cart-total"><span>Итого: </span>750 руб.</div>
@@ -96,17 +96,17 @@
         <li class="filters-list-item filters-list-item-sort">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sort" id="sort">
-              <option value="popular">по популярности</option>
-            </select>
+            <div class="select-wrapper">
+              <select name="sort" id="sort">
+                <option value="popular">по популярности</option>
+              </select>
+              <div class="select-arrow"></div>
+            </div>
           </fieldset>
         </li>
         <li class="filters-list-item filters-list-item-price">
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
-          <!--   <input name="min-price" type="text" value="100">
-            <input name="max-price" type="text" value="500"> -->
-            <!-- <input type="range" min="100" max="500"> -->
             <div class="line"></div>
             <div class="line-fill"></div>
             <div class="control-from"></div>
@@ -117,7 +117,7 @@
           <fieldset>
             <legend>Жирность:</legend>
             <input id="zero" type="radio" name="fat" value="0" checked><label for="zero">0%</label>
-            <input id="lt10" type="radio" name="fat" value="<=10"><label for="lt10">до 10%</label>
+            <input id="lt10" type="radio" name="fat" value="<=10" checked><label for="lt10">до 10%</label>
             <input id="lt30" type="radio" name="fat" value="<=30"><label for="lt30">до 30%</label>
             <input id="gt30" type="radio" name="fat" value=">30"><label for="gt30">выше 30%</label>
           </fieldset>
@@ -141,7 +141,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog1.jpg" alt="" width="267" height="267">
-          <div class="product-price">310<span class="ruble"></div>
+          <div class="product-price">310<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -149,7 +149,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog2.jpg" alt="" width="267" height="267">
-          <div class="product-price">380<span class="ruble"></div>
+          <div class="product-price">380<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -157,7 +157,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog3.jpg" alt="" width="267" height="267">
-          <div class="product-price">355<span class="ruble"></div>
+          <div class="product-price">355<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -165,7 +165,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog4.jpg" alt="" width="267" height="267">
-          <div class="product-price">415<span class="ruble"></div>
+          <div class="product-price">415<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -173,7 +173,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog5.jpg" alt="" width="267" height="267">
-          <div class="product-price">325<span class="ruble"></div>
+          <div class="product-price">325<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочное с брусничным джемом</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -181,7 +181,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog6.jpg" alt="" width="267" height="267">
-          <div class="product-price">410<span class="ruble"></div>
+          <div class="product-price">410<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочно-черничное с цельными ягодами черники</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -189,7 +189,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog7.jpg" alt="" width="267" height="267">
-          <div class="product-price">375<span class="ruble"></div>
+          <div class="product-price">375<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочно-лимонное с карамельной присыпкой</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -197,7 +197,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog8.jpg" alt="" width="267" height="267">
-          <div class="product-price">320<span class="ruble"></div>
+          <div class="product-price">320<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочное с шоколадной стружкой</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -205,7 +205,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog9.jpg" alt="" width="267" height="267">
-          <div class="product-price">440<span class="ruble"></div>
+          <div class="product-price">440<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочно-ванильное с кусочками шоколада</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -213,7 +213,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog10.jpg" alt="" width="267" height="267">
-          <div class="product-price">310<span class="ruble"></div>
+          <div class="product-price">435<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочноe с ментоловым сиропом</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -221,7 +221,7 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog11.jpg" alt="" width="267" height="267">
-          <div class="product-price">355<span class="ruble"></div>
+          <div class="product-price">355<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочное с кусочками черного шоколада</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
@@ -229,12 +229,11 @@
       <div class="product">
         <div class="product-wrapper">
           <img class="product-image" src="img/catalog12.jpg" alt="" width="267" height="267">
-          <div class="product-price">420<span class="ruble"></div>
+          <div class="product-price">420<span class="ruble"></span></div>
         </div>  
         <h3 class="product-name"><span class="underline">Сливочное с мятным сиропом</span></h3>
         <a class="product-view-btn btn" href="#">Быстрый просмотр</a>
       </div>
-
     </div>
     <ul class="container pagination">
       <li class="pagination-item pagination-item-prev pagination-item-disable"><a>&lt;</a></li>
@@ -257,7 +256,7 @@
       <div class="info">
         <div class="info-left">
           <a class="info-item info-item-liked" href="#"><span class="underline">Для поставщиков</span></a>
-          <a class="info-item" href="#"><span class="underline">О производств</span></a>
+          <a class="info-item" href="#"><span class="underline">О производстве</span></a>
         </div>
         <div class="info-right">
           <a class="info-item" href="#"><span class="underline">Наши документы</span></a>
